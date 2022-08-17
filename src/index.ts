@@ -4,7 +4,6 @@ import readPkgJson from 'read-package-json';
 import axios from 'axios';
 import ejs from 'ejs';
 import fs from 'fs/promises';
-import appRootPath from 'app-root-path';
 import open from 'open';
 import _ from 'lodash';
 
@@ -88,7 +87,7 @@ export const getDependenciesInfo = async (parentPkgJsonData: any) => {
 };
 
 export const generateHtml = async (packageJson: any) => {
-  const tmpl = `${appRootPath.path}/node-modules-report.ejs`;
+  const tmpl = `${__dirname}/../node-modules-report.ejs`;
   const out = `${currentWorkingDir}/node-modules-report.html`;
   const html = await ejs.renderFile(tmpl, packageJson, { async: true });
   await fs.writeFile(out, html);
