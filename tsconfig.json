@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2016",
+    "lib": ["es6", "DOM"],
+
+    /* Modules */
+    "module": "commonjs",
+    "rootDir": "src",
+    "resolveJsonModule": true,
+
+    /* JavaScript Support */
+    "allowJs": true,
+
+    /* Emit */
+    "outDir": "build",
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false
+  },
+  "exclude": ["build", "node_modules", "sample", "**/*.spec.ts", "test/**", "jest.config.js", "coverage", "bin"]
+}

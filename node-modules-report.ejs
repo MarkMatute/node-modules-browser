@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Node Modules Report</title>
+    <link href="https://bootswatch.com/5/darkly/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="row justify-content-center">
+                    <div class="card" style="width: 100%; margin-top: 10rem;">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <%= name %>
+                            </h4>
+                            <hr/>
+                            <h6>Dependencies</h6>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <td><b>Package Name</b></td>
+                                    <td><b>Current Version</b></td>
+                                    <td><b>Latest Version</b></td>
+                                </thead>
+                                <tbody>
+                                    <% dependencies.forEach(function(dep) { %>
+                                        <tr>
+                                            <td>
+                                                <a class="<%= dep.status %>" href="<%= dep.currentVersion.homepage %>" target="_blank">
+                                                    <%= dep.name %>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="<%= dep.status %>" href="<%= dep.currentVersion.homepage %>" target="_blank">
+                                                    <%= dep.currentVersion.version %>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="<%= dep.status %>" href="<%= dep.latestVersion.homepage %>" target="_blank">
+                                                    <%= dep.latestVersion.version %>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <% }) %>
+                                </tbody>
+                            </table>
+
+                            <small class="text-muted">
+                                <a class="text-muted" href="https://github.com/MarkMatute" target="_blank">developer</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>
