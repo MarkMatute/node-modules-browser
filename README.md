@@ -27,7 +27,7 @@ a simple representation of node dependencies consolidated in a simple html file 
     ```
 
 3. Wait until an html report pops out
-![output](/output.png "output")
+![output](https://raw.githubusercontent.com/MarkMatute/node-modules-browser/main/output.png "output")
 
 ### Roadmap
 - [ ] display readme libraries

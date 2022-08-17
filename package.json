@@ -7,7 +7,7 @@
     "types": "build/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/SimpleIdeaLabs/simple-ts"
+        "url": "https://github.com/MarkMatute/node-modules-browser"
     },
     "scripts": {
         "dev": "nodemon",
@@ -22,7 +22,8 @@
     "keywords": [
         "typescript",
         "nodejs",
-        "boilerplate"
+        "node modules",
+        "browser"
     ],
     "author": {
         "name": "Mark Ernest R. Matute",

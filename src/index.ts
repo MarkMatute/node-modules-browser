@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable no-console */
 import readPkgJson from 'read-package-json';
 import axios from 'axios';
 import ejs from 'ejs';
