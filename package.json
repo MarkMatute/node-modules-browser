@@ -1,6 +1,6 @@
 {
     "name": "node-modules-browser",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "minimalist typescript boilerplate",
     "bin": "./bin/cli.js",
     "main": "build/index.js",
