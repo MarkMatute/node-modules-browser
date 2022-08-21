@@ -1,7 +1,7 @@
 {
     "name": "node-modules-browser",
     "version": "1.0.2",
-    "description": "minimalist typescript boilerplate",
+    "description": "minimalist node modules ui browser",
     "bin": "./bin/cli.js",
     "main": "build/index.js",
     "types": "build/index.d.ts",
@@ -33,7 +33,6 @@
     "license": "ISC",
     "devDependencies": {
         "@types/ejs": "^3.1.1",
-        "@types/glob": "^7.2.0",
         "@types/jest": "^28.1.7",
         "@types/lodash": "^4.14.183",
         "@types/node": "^18.7.5",
@@ -54,8 +53,7 @@
     "dependencies": {
         "axios": "^0.27.2",
         "ejs": "^3.1.8",
-        "find-up": "^6.3.0",
-        "glob": "^8.0.3",
+        "emojic": "^1.1.17",
         "lodash": "^4.17.21",
         "open": "^8.4.0",
         "read-package-json": "^5.0.1"

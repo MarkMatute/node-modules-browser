@@ -50,6 +50,37 @@
                                 </tbody>
                             </table>
 
+                            <hr/>
+                            <h6>Development Dependencies</h6>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <td><b>Package Name</b></td>
+                                    <td><b>Current Version</b></td>
+                                    <td><b>Latest Version</b></td>
+                                </thead>
+                                <tbody>
+                                    <% devDependencies.forEach(function(dep) { %>
+                                        <tr>
+                                            <td>
+                                                <a class="<%= dep.status %>" href="<%= dep.currentVersion.homepage %>" target="_blank">
+                                                    <%= dep.name %>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="<%= dep.status %>" href="<%= dep.currentVersion.homepage %>" target="_blank">
+                                                    <%= dep.currentVersion.version %>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="<%= dep.status %>" href="<%= dep.latestVersion.homepage %>" target="_blank">
+                                                    <%= dep.latestVersion.version %>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <% }) %>
+                                </tbody>
+                            </table>
+
                             <small class="text-muted">
                                 <a class="text-muted" href="https://github.com/MarkMatute" target="_blank">developer</a>
                             </small>
