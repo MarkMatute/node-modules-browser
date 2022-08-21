@@ -164,7 +164,3 @@ export const start = async () => {
   await generateHtml(packageJson);
   console.log(`Done ${emojic.whiteCheckMark}`);
 };
-
-(async () => {
-  await start();
-})();
