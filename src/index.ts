@@ -88,6 +88,7 @@ export const getDependenciesInfo = async (parentPkgJsonData: any) => {
         version: latestVersion,
         homepage: latestVersionHome
       },
+      readme: dataDep.readme,
       status
     };
   });
@@ -138,6 +139,7 @@ export const getDependenciesInfo = async (parentPkgJsonData: any) => {
         version: latestVersion,
         homepage: latestVersionHome
       },
+      readme: dataDep.readme,
       status
     };
   });

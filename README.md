@@ -30,7 +30,7 @@ a simple representation of node dependencies consolidated in a simple html file 
 ![output](https://raw.githubusercontent.com/MarkMatute/node-modules-browser/main/output.png "output")
 
 ### Roadmap
-- [ ] display readme libraries
+- [x] display readme libraries
 - [ ] add more information about libraries
 
 <!-- LICENSE -->

@@ -4,5 +4,5 @@
     ],
     "ext": ".ts,.js",
     "ignore": [],
-    "exec": "tsc && node --inspect=0.0.0.0:9229 build/index.js"
+    "exec": "tsc && node --inspect=0.0.0.0:9229 build/test.js"
 }
